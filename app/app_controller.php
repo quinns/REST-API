@@ -4,7 +4,7 @@
 		var $helpers = array('Html', 'Text', 'Cache', 'Javascript', 'Ajax');
 		var $components = array('RequestHandler');
 		
-		var $live_site = 'http://www.diamondcertified.org';
+		var $live_site = 'http://rest-api.quinnsupplee.com';
 		var $app_name = 'REST API with XML and CakePHP Demo ';
 		
 		function beforeRender(){
