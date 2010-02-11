@@ -131,58 +131,5 @@ class RegionsController extends AppController {
 		return(count($company_list));
 	}
 	
-
-	
-	
-/*
-	function add() {
-		if (!empty($this->data)) {
-			$this->Region->create();
-			if ($this->Region->save($this->data)) {
-				$this->Session->setFlash(__('The Region has been saved', true));
-				$this->redirect(array('action'=>'index'));
-			} else {
-				$this->Session->setFlash(__('The Region could not be saved. Please, try again.', true));
-			}
-		}
-		$companies = $this->Region->Company->find('list');
-		$categories = $this->Region->Category->find('list');
-		$statuses = $this->Region->Status->find('list');
-		$this->set(compact('companies', 'categories', 'statuses'));
-	}
-
-	function edit($id = null) {
-		if (!$id && empty($this->data)) {
-			$this->Session->setFlash(__('Invalid Region', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		if (!empty($this->data)) {
-			if ($this->Region->save($this->data)) {
-				$this->Session->setFlash(__('The Region has been saved', true));
-				$this->redirect(array('action'=>'index'));
-			} else {
-				$this->Session->setFlash(__('The Region could not be saved. Please, try again.', true));
-			}
-		}
-		if (empty($this->data)) {
-			$this->data = $this->Region->read(null, $id);
-		}
-		$companies = $this->Region->Company->find('list');
-		$categories = $this->Region->Category->find('list');
-		$statuses = $this->Region->Status->find('list');
-		$this->set(compact('companies','categories','statuses'));
-	}
-
-	function delete($id = null) {
-		if (!$id) {
-			$this->Session->setFlash(__('Invalid id for Region', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		if ($this->Region->del($id)) {
-			$this->Session->setFlash(__('Region deleted', true));
-			$this->redirect(array('action'=>'index'));
-		}
-	}
-*/
 }
 ?>
